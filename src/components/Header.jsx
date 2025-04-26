@@ -1,8 +1,19 @@
 import React from 'react'
 import './Header.css'
+import resume from '../assests/SanthoshV_SoftwareDeveloper.pdf'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Header = () => {
+  const handleResumeDownload = () => {
+    window.open(resume,'_blank')
+    // Create a temporary anchor element
+    // const link = document.createElement('a');
+    // link.href = '/SanthoshV_SoftwareDeveloper.pdf';
+    // link.download = 'SanthoshV_SoftwareDeveloper.pdf'; // This forces download
+    // document.body.appendChild(link);
+    // link.click();
+    // document.body.removeChild(link);
+  }
   return (
     <div className='hero' id='home'>
         <div className='name'>
@@ -12,7 +23,7 @@ const Header = () => {
         </div>
         <div className="hero-action">
             <div className="hero-connect"> <AnchorLink className='anchor-link' offset={50} href='#contactme'> Connect with me</AnchorLink></div>
-            <div className="hero-resume">My resume</div>
+            <div className="hero-resume" onClick={handleResumeDownload}>My resume</div>
         </div>
         </div>
   )
