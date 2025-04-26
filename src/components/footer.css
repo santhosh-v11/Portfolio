@@ -1,0 +1,11 @@
+.footer{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer p{
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+}
