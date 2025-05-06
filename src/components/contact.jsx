@@ -6,9 +6,28 @@ import insta from '../assests/insta.svg'
 import git from '../assests/github (1).png'
 const Contact = () => {
     const [result, setResult] = React.useState("");
+    const [error, setError] = React.useState("");
 
   const onSubmit = async (event) => {
     event.preventDefault();
+    setError("");
+    event.preventDefault();
+    const form = event.target;
+    const name = form.name.value.trim();
+    const email = form.email.value.trim();
+    const message = form.message.value.trim();
+
+    if (!name || !email || !message) {
+        alert("Please fill in all the fields before submitting the form.");
+        return;
+    }
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+    setError("Please enter a valid email address.");
+    return;
+  }
+
+
     setResult("Sending....");
     const formData = new FormData(event.target);
 
@@ -66,6 +85,8 @@ const Contact = () => {
                         <input type="email" placeholder='Enter Your email' name="email" id="" />
                         <label htmlFor="">Write Your Message</label>
                         <textarea placeholder='Enter Your Message' name="message" id="" rows="8"></textarea>
+                        {error && <p style={{ color: 'red', marginTop: '10px' }}>{error}</p>}
+
                         <button type='submit' className='submit'>Submit Now</button>
                     </form>
                 </div>
