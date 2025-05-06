@@ -12,7 +12,6 @@
     padding: 0px 30px;
     font-size: 80px;
     font-weight: 600;
-    
  }
  #about-title img{
     justify-content: center;
@@ -104,7 +103,7 @@
   }
   
   /* Responsive adjustments */
-  @media (max-width: 768px) {
+  @media (max-width: 768px)  {
     .skills-container {
       gap: 20px;
     }
@@ -117,6 +116,12 @@
       width: 70px;
       height: 70px;
     }
+    #about-title h1{
+      padding: 0px 30px;
+      font-size: 55px;
+      font-weight: 600;
+      align-items: center;
+   }
   }
   
   @media (max-width: 480px) {
@@ -136,4 +141,5 @@
     .skill-name {
       font-size: 0.8rem;
     }
+    
   }

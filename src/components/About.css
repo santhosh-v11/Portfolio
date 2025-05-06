@@ -13,7 +13,6 @@
     padding: 0px 30px;
     font-size: 80px;
     font-weight: 600;
-    
  }
  .about-title img{
     position: absolute;
@@ -38,3 +37,18 @@
     font-weight: 500;
 
  }
+ @media (max-width: 768px) {
+   .about-title h1{
+      font-size: 55px;
+      font-weight: 600;
+   }
+   .about-para p{
+      width: 80vw;
+      margin: 10px;
+      font-size: 50;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: start;
+      gap:10px;
+   }
+}

@@ -63,5 +63,8 @@
       width: 90%;
       height: auto;
     }
+    .project-title h1{
+      font-size: 55px;
+    }
   }
   

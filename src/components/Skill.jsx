@@ -27,7 +27,7 @@ const Skills = () => {
   return (
         <div className='about' id='skill'>
         <div id='about-title'>
-            <h1>My Skills</h1>
+            <h1 id='hh'>My Skills</h1>
             <img src={theme} alt="" />
         </div>
 
