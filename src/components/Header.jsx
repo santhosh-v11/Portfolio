@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.css'
-import resume from '../assests/SanthoshV_SoftwareDeveloper.pdf'
+import resume from '../assests/SanthoshV_JavaFullstack.pdf'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const Header = () => {
