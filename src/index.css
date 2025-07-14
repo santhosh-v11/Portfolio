@@ -21,3 +21,10 @@ body{
   color: whitesmoke;
   font-family: 'outfit';
 }
+canvas {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: -1 !important; /* Push behind everything */
+  pointer-events: none;   /* Allow clicks to pass through */
+}
