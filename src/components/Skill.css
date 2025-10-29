@@ -101,45 +101,57 @@
     color: #eee;
     font-size: 0.9rem;
   }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px)  {
-    .skills-container {
-      gap: 20px;
-    }
-    
-    .skill-item {
-      width: 80px;
-    }
-    
-    .skill-icon {
-      width: 70px;
-      height: 70px;
-    }
-    #about-title h1{
-      padding: 0px 30px;
-      font-size: 55px;
-      font-weight: 600;
-      align-items: center;
-   }
+  /* 📱 Tablet view */
+@media (max-width: 768px) {
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
   }
-  
-  @media (max-width: 480px) {
-    .skills-container {
-      gap: 15px;
-    }
-    
-    .skill-item {
-      width: 70px;
-    }
-    
-    .skill-icon {
-      width: 60px;
-      height: 60px;
-    }
-    
-    .skill-name {
-      font-size: 0.8rem;
-    }
-    
+
+  .skill-item {
+    width: 90px;
   }
+
+  .skill-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  #about-title h1 {
+    font-size: 55px;
+  }
+}
+
+/* 📱 Mobile view: exactly two per row, centered */
+@media (max-width: 480px) {
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    justify-content: center;      /* centers the entire grid */
+    align-items: center;          /* vertically centers items */
+    justify-items: center;        /* centers each icon in its cell */
+    gap: 30px 25px;               /* balanced row and column spacing */
+    width: 100%;
+    max-width: 350px;             /* keeps grid centered on small screens */
+    margin: 0 auto;
+  }
+
+  .skill-item {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .skill-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .skill-name {
+    font-size: 0.85rem;
+  }
+}
