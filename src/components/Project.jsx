@@ -7,11 +7,13 @@ import port from '../assests/port.png'
 import weather from '../assests/weather.png'
 import cal from '../assests/calender.png'
 import estate from '../assests/estate.jpeg'
+import gemini from '../assests/gemini-clone.jpeg'
 
 const Project = () => {
     const projectt = [
         { name: 'Portfolio', icon: port, desc:'Developed a responsive Personal Portfolio Website using React.js and it serves as a digital resume, showcasing projects, skills. Implemented dynamic components, smooth animations, and a mobile-friendly UI. Integrated a contact form for direct communication.' ,link:'https://santhosh-v11.github.io/Portfolio/ '},
         { name: 'Real Estate Landing Page', icon: estate,desc:'Designed and deployed a responsive real estate website using React.js and Tailwind CSS. The project showcases modern UI components including navigation, hero sections, project listings, testimonials, and newsletter subscription. Emphasized clean layout, semantic structure, and mobile-first design principles. Integrated reusable components and optimized for performance and accessibility.',link:'https://santhosh-v11.github.io/Estate/'},
+        { name: 'Recreated Gemini-2', icon: gemini,desc:'Built a Gemini AI Clone using React, Vite, andCSS. Integrated OpenAI API for intelligent chatbot responses and implemented typing effects with Markdown rendering. Utilized useContext for efficient global state sharing, ensuring seamless user interaction with fade animation and responsive, modern conversational UI design.',link:'https://santhosh-v11.github.io/gemini-clone/'},
 
         { name: 'TaskManager', icon: apple,desc:'A simple and responsive task management app to add, track, and complete tasks. Built using React.js with Vite, it features dynamic UI updates, task counters, and a clean layout. Deployed via GitHub Pages.This project strengthened my understanding of React hooks, component structure, and deploying production-ready apps.',link:'https://santhosh-v11.github.io/TaskManager/'},
 
