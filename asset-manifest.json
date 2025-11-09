@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.e3a0e980.css",
-    "main.js": "/Portfolio/static/js/main.435bc7cc.js",
+    "main.js": "/Portfolio/static/js/main.a06baa63.js",
     "static/js/453.1407b060.chunk.js": "/Portfolio/static/js/453.1407b060.chunk.js",
     "static/media/port.png": "/Portfolio/static/media/port.ea54090f5a95df33b7d0.png",
     "static/media/estate.jpeg": "/Portfolio/static/media/estate.e3d1326307bfeb0297a9.jpeg",
@@ -9,6 +9,7 @@
     "static/media/back.jpg": "/Portfolio/static/media/back.29b2526d7d71ab9dff44.jpg",
     "static/media/weather.png": "/Portfolio/static/media/weather.83547a21fd1f03ad8359.png",
     "static/media/ecomflone.png": "/Portfolio/static/media/ecomflone.c2aee1fd7c9baa6526c7.png",
+    "static/media/gemini-clone.jpeg": "/Portfolio/static/media/gemini-clone.5c8db6b4b8717c6bf450.jpeg",
     "static/media/SanthoshV_JavaFullstack.pdf": "/Portfolio/static/media/SanthoshV_JavaFullstack.b52ae1f807b67dee1acc.pdf",
     "static/media/calender.png": "/Portfolio/static/media/calender.c9a75149d16f70bfe7f9.png",
     "static/media/insta.svg": "/Portfolio/static/media/insta.c83e628eea4e83e0d2b6c8e54910510c.svg",
@@ -26,11 +27,11 @@
     "static/media/linked.svg": "/Portfolio/static/media/linked.ecadf8ce2ab9f31dd0278e1b5c8cc7ca.svg",
     "static/media/theme.svg": "/Portfolio/static/media/theme.c9aae4dcd7af8267d4231831e4c3b312.svg",
     "main.e3a0e980.css.map": "/Portfolio/static/css/main.e3a0e980.css.map",
-    "main.435bc7cc.js.map": "/Portfolio/static/js/main.435bc7cc.js.map",
+    "main.a06baa63.js.map": "/Portfolio/static/js/main.a06baa63.js.map",
     "453.1407b060.chunk.js.map": "/Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e3a0e980.css",
-    "static/js/main.435bc7cc.js"
+    "static/js/main.a06baa63.js"
   ]
 }
