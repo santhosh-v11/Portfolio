@@ -28,11 +28,12 @@
 /* 🧱 Project Grid */
 .project-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* two per row on desktop */
+  grid-template-columns: repeat(3, 1fr); /* two per row on desktop */
   gap: 2rem;
   justify-items: center;
   width: 100%;
   max-width: 1200px;
+
 }
 
 /* 🪟 Card Format */
@@ -48,7 +49,7 @@
   border: 2px solid white;
   background-color: rgba(255, 255, 255, 0.05);
   transition: 0.4s ease;
-  cursor: pointer;
+  cursor:pointer;
   width: 100%;
   max-width: 500px;  /* equal width */
   min-height: 520px; /* 🧩 ensures all boxes are same height */
@@ -72,17 +73,20 @@
 .format img:hover {
   transform: scale(1.05);
 }
-
-.format h1 {
+.format a{
+  text-decoration: none;
+}
+.format  h1 {
   font-size: 22px;
   margin-top: 10px;
   color: white;
 }
 
 .format p {
-  font-size: 15px;
+  font-size: 16px;
   color: #ddd;
   line-height: 1.5;
+  text-align:start;
 }
 
 /* 📱 Responsive */
