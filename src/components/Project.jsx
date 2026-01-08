@@ -24,7 +24,7 @@ const Project = () => {
         { name: 'TaskManager', icon: apple,desc:'A simple and responsive task management app to add, track, and complete tasks. Built using React.js with Vite, it features dynamic UI updates, task counters, and a clean layout. Deployed via GitHub Pages.This project strengthened my understanding of React hooks, component structure, and deploying production-ready apps.',link:'https://santhosh-v11.github.io/TaskManager/'},
 
        
-        { name: 'E-commerce', icon: ecom, desc:"A responsive and visually appealing kids' fashion e-commerce homepage built using HTML, CSS, and JavaScript. The design replicates a professional storefront with promotional banners, product showcases, category highlights, and user friendly navigation—optimized for both desktop and mobile devices.", link:'https://santhosh-v11.github.io/Ecom/'},
+        { name: 'E-commerce', icon: ecom, desc:"Designed and developed a responsive e-commerce front-end using React.js with a Kids Fashion theme.Focused on modern UI design, reusable components, and mobile-first responsiveness for cross-device compatibility.", link:'https://santhosh-v11.github.io/Ecom/'},
 
          { name: 'WeatherApp', icon: weather, desc:'Developed a responsive web application using React.js to provide real-time weather information. Integrated APIs to fetch and display weather data',link:'https://santhosh-v11.github.io/weather/'  },
         
