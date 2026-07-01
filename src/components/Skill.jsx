@@ -32,7 +32,7 @@ const Skills = () => {
 
   return (
     <div className='about' id='skill'>
-      <div id='about-title'>
+      <div id='about-title' data-aos="fade-right">
         <h1 id='hh'>My Skills</h1>
         <img src={theme} alt="" />
       </div>
@@ -44,6 +44,8 @@ const Skills = () => {
             key={index}
             className="skill-item"
             style={{ '--skill-color': skill.color }}
+            data-aos="zoom-in"
+            data-aos-delay={index * 50}
           >
             <div className="skill-icon">
               <img src={skill.icon} alt={skill.name} />

@@ -20,13 +20,13 @@ const Experience = () => {
 
     return (
         <div className='experience' id='experience'>
-            <div className='experience-title'>
+            <div className='experience-title' data-aos="fade-right">
                 <h1>Experience</h1>
                 <img src={theme} alt="" />
             </div>
             <div className="experience-timeline">
                 {experiences.map((exp, index) => (
-                    <div key={index} className='timeline-item'>
+                    <div key={index} className='timeline-item' data-aos="fade-up" data-aos-delay={index * 200}>
                         <div className='timeline-dot'></div>
                         <div className='timeline-content'>
                             <div className='timeline-header'>
