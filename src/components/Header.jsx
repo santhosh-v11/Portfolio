@@ -6,7 +6,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 const Header = () => {
   const [isResumeOpen, setIsResumeOpen] = useState(false);
   const handleResumeDownload = () => {
-
+    window.open(resume, '_blank')
     // Create a temporary anchor element
     // const link = document.createElement('a');
     // link.href = '/SanthoshV_SoftwareDeveloper.pdf';
