@@ -1,21 +1,15 @@
 import React, { useState } from 'react'
-import ResumeModal from './ResumeModal'
+import {trackEvent} from './analytics'
 import './Header.css'
 import resume from '../assests/resume.pdf'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 const Header = () => {
-  const [isResumeOpen, setIsResumeOpen] = useState(false);
+
   const handleResumeDownload = () => {
-    window.open(resume, '_blank')
-    // Create a temporary anchor element
-    // const link = document.createElement('a');
-    // link.href = '/SanthoshV_SoftwareDeveloper.pdf';
-    // link.download = 'SanthoshV_SoftwareDeveloper.pdf'; // This forces download
-    // document.body.appendChild(link);
-    // link.click();
-    // document.body.removeChild(link);
-    setIsResumeOpen(true);
-  }
+    trackEvent('resume_download', { location: 'hero' });
+    window.open(resume, '_blank');
+  };
+
   return (
     <div className='hero' id='home' data-aos="fade-in">
       <div className='name' data-aos="fade-up" data-aos-delay="200">
@@ -29,7 +23,7 @@ const Header = () => {
         <div className="hero-connect"> <AnchorLink className='anchor-link' offset={50} href='#contactme'> Connect with me</AnchorLink></div>
         <div className="hero-resume" onClick={handleResumeDownload}>My resume</div>
       </div>
-      {isResumeOpen && <ResumeModal onClose={() => setIsResumeOpen(false)} />}
+
     </div>
   )
 }

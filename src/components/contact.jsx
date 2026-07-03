@@ -4,6 +4,7 @@ import theme from '../assests/theme.svg'
 import linkedin from '../assests/linked.svg'
 import insta from '../assests/insta.svg'
 import git from '../assests/github (1).png'
+import { trackEvent } from './analytics';
 const Contact = () => {
     const [result, setResult] = React.useState("");
     const [error, setError] = React.useState("");
@@ -60,17 +61,17 @@ const Contact = () => {
             <div className="contact-left">
                 <h1>Let's Talk</h1>
                 <div className="con-detail1">
-                    <div className="con-detail">
+                    <div className="con-detail" onClick={()=>trackEvent('sociallink',{platform:'github'})}>
                         <a href="https://github.com/santhosh-v11" target="_blank" rel="noopener noreferrer">
                             <img src={git} alt="" />
                         </a>
                     </div>
-                    <div className="con-detail">
+                    <div className="con-detail" onClick={()=>trackEvent('sociallink',{platform:'linkedin'})}>
                         <a href="https://www.linkedin.com/in/santhosh-v11/" target="_blank" rel="noopener noreferrer">
                             <img src={linkedin} alt="" />
                         </a>
                     </div>
-                    <div className="con-detail">
+                    <div className="con-detail" onClick={()=>trackEvent('sociallink',{platform:'instagram'})}>
                         <a href="https://instagram.com/sandy_santhosh_v" target="_blank" rel="noopener noreferrer">    
                             <img src={insta} alt="" />
                         </a>
