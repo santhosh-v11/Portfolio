@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {trackEvent} from './analytics'
 import './Header.css'
 import resume from '../assests/resume.pdf'

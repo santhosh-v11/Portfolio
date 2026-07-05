@@ -87,6 +87,7 @@ const Contact = () => {
                         <label htmlFor="">Write Your Message</label>
                         <textarea placeholder='Enter Your Message' name="message" id="" rows="8"></textarea>
                         {error && <p style={{ color: 'red', marginTop: '10px' }}>{error}</p>}
+                        {result && !error && <p style={{ color: '#4CAF50', marginTop: '10px' }}>{result}</p>}
 
                         <button type='submit' className='submit'>Submit Now</button>
                     </form>
