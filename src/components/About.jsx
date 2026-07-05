@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import theme from 'E:/portfolio/portfolio/src/assests/theme.svg'
+import theme from '../assests/theme.svg'
 const About = () => {
     return (
         <div className='about' id='about'>
