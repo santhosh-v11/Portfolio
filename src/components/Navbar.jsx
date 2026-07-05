@@ -4,7 +4,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import open from '../assests/toggle.svg'
 import close from '../assests/close.svg'
 const Navbar = () => {
-  const [menu, setmenu] = useState("home");
+  const [, setmenu] = useState("home");
   const menuRef = useRef();
   const openmenu = () => {
     menuRef.current.style.right = "0";
