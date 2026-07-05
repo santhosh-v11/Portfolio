@@ -44,5 +44,11 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
+  },
+  "overrides": {
+  "react-animated-cursor": {
+    "react": "$react"
   }
 }
+}
+
