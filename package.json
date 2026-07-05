@@ -47,7 +47,8 @@
   },
   "overrides": {
   "react-animated-cursor": {
-    "react": "$react"
+    "react": "$react",
+    "react-dom": "$react-dom"
   }
 }
 }
